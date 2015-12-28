@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smooth Sailing - Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+  </head>
+  <body id="top" data-spy="scroll" data-offset="50" data-target="#navigation">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
+
+        <div id="navigation">
+          <a class="navbar-brand" href="#top">Smooth Sailing</a>
+          <ul class="nav navbar-nav pull-right">
+            <li class="active"><a href="#item-features">Features</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#html-structure">HTML</a></li>
+            <li><a href="#css-structure">CSS</a></li>
+            <li><a href="#javascript">Javascript</a></li>
+            <li><a href="#newsletter">Newsletter Signup</a></li>
+            <li><a href="#contact-form">Contact Form</a></li>
+            <li><a href="#twitter">Twitter Widget</a></li>
+            <li><a href="#credits">Credits</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Bootstrap Container -->
+    <div class="container">
+      <div class="row">                         
+
+          <div class="jumbotron">
+            <h1>A big thank you!</h1>
+            <p class="lead">Thank you for your purchase! I hope you enjoy the template 
+            and have fun customising it to your needs!</p>
+
+            <p class="lead">You'll find some pointers below, as well as in the files directly (comments). 
+            If you need more help, feel free to e-mail me at <a href="mailto:simon@simonswiss.com">simon@simonswiss.com</a>.</p>
+          </div>
+
+          <section id="item-features">
+            <h2>Item Features</h2><hr>
+            <ul>
+              <li>Bootstrap 3 + LESS</li>
+              <li>HTML5 + CSS3</li>
+              <li>One-Page, Smooth Scrolling Layout</li>
+              <li>Responsive Design</li>
+              <li>AJAX Contact Form + Newsletter Signup</li>
+              <li>Glyphicons + Custom IcoMoon Icons</li>
+              <li>FlexSlider</li>
+              <li>Twitter Widget</li>
+            </ul>
+          </section>
+
+          <section id="installation">
+            <h2>Installation</h2><hr>
+            <p>Unzip the download package. All the files of the website are in the HTML folder. You can simply copy the HTML folder itself to your web server or localhost. Once installed, visit "/index.html" to view the website.</p>
+          </section>
+
+          <section id="html-structure">
+          <h2>HTML Structure</h2><hr>
+            <p>Smooth Sailing is built with the Bootstrap 3 framework - http://www.getbootstrap.com - that means you have access to all the great features, css & js goodies has to offer. To learn more about Bootstrap's grid system, please refer to <a href="http://getbootstrap.com/css/#grid">http://getbootstrap.com/css/#grid</a></p>
+
+            <p>There is <strong>one single html document</strong>, where all the HTML for the site is present - this file is called index.html. The different sections of the website are clearly separated in commented sections, in the HTML and CSS files, to help you find your way easily through the files.</p>
+          </section>
+
+          <section id="css-structure">
+            <h2>CSS Structure</h2><hr>
+            <p>Smooth Sailing was developed using LESS. The .less files are included in the template, although not used directly for the website. They allow you to customise the template via less if you wish to. To do so, you'll need to compile those files into the respective css files.</p>
+            <p>There are 6 color-skins and therefore 6 stylesheets, named style1, style2, etc. You'll need to select which one of these files you want to work with and link it in the index.html head section. By default, the style1 stylesheet is linked.</p>
+
+            <p>Using LESS files has obvious advantages - for example you can change the primary highlight color (#0099aa) by going into the /less/variables.less file and changing the value of the "@highlight-one" variable. Changing the color there and saving the file, providing you're compiling correctly, will instantly change all the instances where this color is used, and you will have a brand new color scheme!</p>
+            <p>The index.html file calls one single css file, style.css. Style.css imports a few other css files, including the bootstrap css file. If you customise the css, you should place your css in style.less / style.css and leave the other files as is.</p>
+          </section>
+
+          <section id="javascript">
+            <h2>Javascript</h2><hr>
+            <p>In the /js/ folder, you'll find the custom.js which is the file where scripts are written. You can modify this file, but the other js files should, in most cases, be left alone.</p>
+            <p>With a bit of jQuery knowledge, in custom.js you'll be able to tweak the css animations on scroll, the twitter widget and the newsletter signup ajax form (see below).</p>
+          </section>
+
+          <section id="newsletter">
+            <h2>Newsletter Signup Form</h2><hr>
+            <p>To have the newsletter form working, you'll need to host your website on an APACHE server that can handle PHP files correctly. The main thing you need to do to get the form to work is to enter your desired e-mail address in the config.php file. This is where the notification of a new signup will be e-mailed. Please note that you'll need to create manually your mailing list with the incoming subscription e-mails.</p>
+            <p>The config.php file is in the root directory of the website and contains one line. Replace "your-email-address@here.com" with the appropriate address, that's all you need to do!</p>
+            <p>If you want to customise the error / success / notification messages, you can do so in /js/custom.js (for the success message) and in /assets/newsletter.php (for the error messages & e-mail confirmation).</p>
+            <p><strong>Remember:</strong> this form will not work if server doesn't handle PHP files.</p>
+          </section>
+
+          <section id="contact-form">
+            <h2>Contact Form</h2><hr>
+            <p>Works exactly like the newsletter signup form described above, except that the script responsible for this form is in /assets/contact.php</p>
+            <p>If you want to customise the error / success / notification messages, you can do so in /js/custom.js (for the success message) and in /assets/contact.php (for the error messages & e-mail confirmation).</p>
+            <p><strong>Remember:</strong> this form will not work if server doesn't handle PHP files.</p>
+          </section>
+
+          <section id="twitter">
+            <h2>Twitter Widget</h2><hr>
+            <p>To get your twitter feed working, you'll need to put your own twitter username in the settings. You can find the "Twitter Feed" section in /js/custom.js almost at the bottom of the file. Find the line "username" that has "envato" as a demo, and place your username id here instead. You can play around with other settings, such as display more than 1 tweet, change the "a few hours ago" text, etc.</p>
+            <p>For full documentation on this twitter widget, please refer to <a href="https://github.com/StanScates/Tweet.js-Mod">https://github.com/StanScates/Tweet.js-Mod</a>.</p>
+          </section>
+
+          <section id="credits">
+            <h2>Credits</h2><hr>
+            <p class="lead">The following items used in this template deserve credit:</p><br>
+            
+            <h4>CSS FRAMEWORKS</h4>
+            <ul>
+              <li>Twitter Bootstrap 3 - <a href"http://www.getbootstrap.com">http://www.getbootstrap.com</a></li> 
+              <li>Animate.css by Dan Eden - <a href"http://daneden.me/animate/">http://daneden.me/animate/</a></li>
+          ￼￼</ul>
+            <hr>
+            <h4>SCRIPTS</h4>
+            <ul>
+              <li>jQuery Library - <a href"http://www.jquery.com">http://www.jquery.com</a></li>
+              <li>FlexSlider - <a href"http://www.woothemes.com/flexslider">http://www.woothemes.com/flexslider</a></li>
+              <li>FitVids.js - <a href"http://fitvidsjs.com">http://fitvidsjs.com</a></li>
+              <li>InView.js by Remy Sharp - <a href"http://remysharp.com/2009/01/26/element-in-view-event-plugin/ ">http://remysharp.com/2009/01/26/element-in-view-event-plugin/</a></li>
+              <li>Respond.js - <a href="https://github.com/scottjehl/Respond">https://github.com/scottjehl/Respond</a></li>
+              <li>Tweet.js-Mod - <a href="https://github.com/StanScates/Tweet.js-Mod">https://github.com/StanScates/Tweet.js-Mod</a></li>
+              <li>Ajax Form: Bit Repository - <a href"http://www.bitrepository.com/">http://www.bitrepository.com/</a></li>
+            </ul>
+              <hr>
+            <h4>FONTS</h4>
+            <ul>
+              <li>Lato - Google WebFont - <a href"http://www.google.com/fonts/specimen/Lato">http://www.google.com/fonts/specimen/Lato</a></li>
+            </ul>
+              <hr>
+            <h4>ICONS</h4>
+            <ul>
+              <li>IcoMoon - <a href"http://icomoon.com/">http://icomoon.com/</a> (selected icons)</li>
+              <li>FontAwesome - <a href"http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a> (selected icons)</li>
+              <li>Glyphicons for Bootstrap - <a href"http://glyphicons.getbootstrap.com">http://glyphicons.getbootstrap.com</a> (full collection)</li>
+            </ul>
+              <hr>
+            <h4>IMAGES (ONLY AVAILABLE IN PREVIEW - NOT INCLUDED IN DOWNLOADS)</h4>
+            <ul>
+              <li><a href"http://creattica.com/creatives/jardo/269654 ">http://creattica.com/creatives/jardo/269654 </a></li>
+              <li><a href"http://creattica.com/icons/music-on-the-go-ipad-app-icon/95655">http://creattica.com/icons/music-on-the-go-ipad-app-icon/95655</a></li>
+              <li><a href="https://creativemarket.com/bogdan">https://creativemarket.com/bogdan</a></li>
+              <li><a href"http://creattica.com/creatives/vladuha/92930">http://creattica.com/creatives/vladuha/92930</a></li>
+              <li><a href"http://creattica.com/css/themebeans-website/95276 ">http://creattica.com/css/themebeans-website/95276 </a></li>
+              <li><a href"http://tieatiedesigns.com">http://tieatiedesigns.com</a></li>
+              <li><a href"http://www.bratus.co//creattica.com/logos/koloroo-logo/18863">http://www.bratus.co http://creattica.com/logos/koloroo-logo/18863</a></li>
+            </ul>
+          </section>
+        
+        </div><!-- end main column -->
+      
+      </div><!-- end row -->
+    </div><!-- end container -->
+
+    <!-- JavaScript plugins -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>

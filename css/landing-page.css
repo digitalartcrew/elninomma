@@ -1,0 +1,493 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+ 
+ /*buttons css*/
+ 
+ /*Coinslider*/
+ 
+
+  
+ 
+ #modal_text	{
+	 color: #000;
+ }
+ 
+
+ /*logo*/
+ 
+ .boxed {
+width:100%;
+height: 100%;
+   background:#C72124;
+  margin-top: -275px;
+	 font-size: 25px;
+	 letter-spacing: 15px;
+	 font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+}
+ 
+ .centeredlogo	{ 
+	position: relative;
+ 	top: 80px;
+	opacity: 0;
+ }
+ 
+ #champions {
+	 margin-top: -270px;
+	 font-size: 25px;
+	 letter-spacing: 30px;
+	 font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+ }
+ 
+ .credentials {
+	 color: #000;
+ }
+ 
+ #faq {
+	 color: #000;
+ }
+ 
+ 
+ 
+                         
+ 
+$duration: .20;
+$easing: ease-in-out;
+
+* {
+  box-sizing: border-box;
+}
+
+[data-wipe] {  
+  display: inline-block;
+  padding: 12px 18px;
+  text-decoration: none;
+  position: relative;
+  border: 2px solid #445561;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color:#205BC6;
+  overflow: hidden;
+  
+  
+  &:before, &:after {
+    content: attr(data-wipe);
+    padding-top: inherit;
+    padding-bottom: inherit;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    color: #F1F1F2;
+    background: #445561;
+  }
+  
+  &:before {
+    left: 0;
+    text-indent: 18px;
+    width: 0;
+  }
+  
+  &:after {
+    padding-left: inherit;
+    padding-right: inherit;
+    left: 100%;
+    text-indent: calc(-100% - 36px);
+    transition: $duration + s $easing;
+  }
+  
+  &:hover {
+    &:before {
+      width: 100%;
+      transition: width $duration + s $easing;
+    }
+    
+    &:after {
+      left: 0;
+      text-indent: 0;
+      transition: 0s $duration + s $easing;
+    }
+  }
+}
+
+body {
+	background-color:#000;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+h1,
+h2,
+
+
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 25px;
+    font-weight: 400;
+	
+}
+
+.headlead {
+	color: white;
+}
+
+.intro-header {
+	margin-top: 50px;
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    background:url(../img/el_nino_training_page3.png);
+    background-size: cover;
+	background-repeat:no-repeat;
+	
+	width:100%;
+}
+
+.top_address	{
+	position: center;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 0;
+	margin-bottom: 50px;
+}
+
+.intro-message > h1 {
+    
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 0px 0;
+    background-color:#747071;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+#class_box_athletic {
+	width: 300px;
+	height: 300px;
+	text-align:center;
+	padding: 115px;
+	background-image:url(../img/fitness.png);
+	color: #fff;
+
+text-shadow: 0px 6px 6px #000;
+	
+}
+
+#class_box_athletic:hover {
+	opacity: 0.3;
+	  filter: alpha(opacity=30); 
+}
+	
+
+#class_box_bjj:hover {
+	 opacity: 0.3;
+	  filter: alpha(opacity=30); 
+}
+	
+
+
+
+#class_box_bjj {
+	width: 300px;
+	height: 300px;
+	text-align:center;
+	padding: 115px;
+	background-image:url(../img/bjj.png);
+	color: #fff;
+	text-shadow: 0px 6px 6px #000;
+	
+	
+}
+
+
+
+#class_box_boxing {
+	width: 300px;
+	height: 300px;
+	text-align:center;
+	padding: 115px;
+	background-image:url(../img/boxing.png);
+	color: #fff;
+	text-shadow: 0px 6px 6px #000;
+	
+}
+
+#class_box_boxing:hover {
+	 opacity: 0.3;
+	  filter: alpha(opacity=30); 
+}
+	
+
+#class_box_muaythai {
+	width: 300px;
+	height: 300px;
+	text-align:center;
+	padding: 115px;
+	background-image:url(../img/muay_thai.png);
+	color: #fff;
+	text-shadow: 0px 6px 6px #000;
+	
+}
+
+#class_box_muaythai:hover {
+	 opacity: 0.3;
+	  filter: alpha(opacity=30); 
+}
+	
+
+#class_box_wrestling {
+	width: 300px;
+	height: 300px;
+	text-align:center;
+	padding: 115px;
+	background-image:
+	url(../img/wrestling.png);
+	color: #fff;
+	text-shadow: 0px 6px 6px #000;
+	
+}
+
+#class_box_wrestling:hover {
+	 opacity: 0.3;
+	  filter: alpha(opacity=30); 
+}
+	
+
+#class_box_youth {
+	width: 300px;
+	height: 300px;
+	text-align:center;
+	padding: 115px;
+	background-image:url(../img/youth.png);
+	color: #fff;
+	text-shadow: 0px 6px 6px #000;
+	
+}
+
+#class_box_youth:hover {
+	 opacity: 0.3;
+	  filter: alpha(opacity=30); 
+}
+
+#class_box_mma {
+	width: 300px;
+	height: 300px;
+	text-align:center;
+	padding: 115px;
+	background-image:url(../img/mma.png);
+	color: #fff;
+	text-shadow: 0px 6px 6px #000;
+	
+}
+
+#class_box_mma:hover {
+	 opacity: 0.3;
+	  filter: alpha(opacity=30); 
+}
+
+#class_box_gymrates {
+	width: 300px;
+	height: 300px;
+	text-align:center;
+	padding: 25px;
+	background:url(../img/gym_rates.png);
+	color: #fff;
+	text-shadow: 0px 6px 6px #000;
+	
+}
+
+#class_box_gymrates:hover {
+	 opacity: 0.3;
+	  filter: alpha(opacity=30); 
+}
+
+#class_box_fight {
+	width: 300px;
+	height: 300px;
+	text-align:center;
+	padding: 115px;
+	background:url(../img/scrap_pak.png);
+	color: #fff;
+	text-shadow: 0px 6px 6px #000;
+	
+}
+
+#class_box_fight:hover {
+	 opacity: 0.3;
+	  filter: alpha(opacity=30); 
+}
+
+.row_about {
+	
+}
+
+#add_info	{
+	font-size:12px;
+	width:100%;
+	position:relative;
+	margin: 0px;
+	
+	
+}
+
+.top_address {
+	color: #000000;
+}
+
+#title_top	{
+	
+	position:left;
+	margin: 0px;
+	
+	
+	
+}
+
+.container_bottom	{
+	background:#000;
+}
+
+#class_pos {
+	position:	relative;
+	top: 100px;
+	font-size:36px;
+	letter-spacing: 6px;
+	text-shadow: 10px 10px 10px 10px #5D4D4D;
+
+  
+}
+
+.row_foot	{
+	background: #171796;
+}
+	
