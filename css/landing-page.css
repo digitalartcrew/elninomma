@@ -19,13 +19,13 @@
  /*logo*/
  
  .boxed {
-width:100%;
-height: 100%;
-   background:#C72124;
-  margin-top: -275px;
-	 font-size: 25px;
-	 letter-spacing: 15px;
-	 font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	width:100%;
+	height: 100%;
+   	background:#C72124;
+  	margin-top: -275px;
+	font-size: 25px;
+	letter-spacing: 15px;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 }
  
  .centeredlogo	{ 
